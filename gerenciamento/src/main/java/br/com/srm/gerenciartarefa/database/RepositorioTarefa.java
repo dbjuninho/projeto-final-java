@@ -1,9 +1,9 @@
-package br.com.srm.gerenciartarefa.repository;
+package br.com.srm.gerenciartarefa.database;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import br.com.srm.gerenciartarefa.entidades.Tarefa;
 
-public interface TarefaRepository extends JpaRepository<Tarefa, Long> {
+public interface RepositorioTarefa extends JpaRepository<Tarefa,Long>{
     
 }

@@ -7,7 +7,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import br.com.srm.gerenciartarefa.entidades.Tarefa;
-import br.com.srm.gerenciartarefa.repository.TarefaRepository;
+import br.com.srm.gerenciartarefa.database.RepositorioTarefa;
 import br.com.srm.gerenciartarefa.services.TarefaService;
 
 import java.util.List;
@@ -17,7 +17,7 @@ public class TarefaController {
 
     private static final Tarefa atualizarTarefa = null;
     @Autowired
-    private TarefaRepository tarefaRepository;
+    private RepositorioTarefa tarefaRepository;
 
     @GetMapping("/listar")
     public String index(Model model) {
